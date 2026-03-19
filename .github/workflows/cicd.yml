@@ -51,8 +51,9 @@ jobs:
         with:
           name: react-build
           path: dist
+          
       - name: Run tests
-        run: npm test -- -- watchAll=false
+        run: npm test -- --watchAll=false
       
       - name: Validate build Output
         run: |
