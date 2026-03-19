@@ -107,8 +107,8 @@ jobs:
           containerAppName: ${{ env.CONTAINER_APP_NAME }}
           containerAppEnvironment: ${{ env.CONTAINER_APP_NAME }}-env
           registryUrl: ${{ env.AZURE_CONTAINER_REGISTRY }}.azurecr.io
-          registryUsername: ${{ secrets.AZURE_REGISTRY_USERNAME }}
-          registryPassword: ${{ secrets.AZURE_REGISTRY_PASSWORD }}
+          registryUsername: ${{ secrets.TEST_REGISTRY_USERNAME }}
+          registryPassword: ${{ secrets.TEST_REGISTRY_PASSWORD }}
           ingress: external
           targetPort: 80
 
